@@ -24,6 +24,7 @@ function Home() {
           title={product.title}
           price={product.price}
           pId={product.id}
+          key={product.id}
         />
       );
     });
