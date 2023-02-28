@@ -1,5 +1,8 @@
 # Sowlutions-test part 2
 
-### - Adding For API integration / website  popup and pagination  
+### - Adding For API integration / website popup and pagination with small design
 
-### - using ReactJs
+### - using ReactJs and Tailwind
+
+# Installation
+
