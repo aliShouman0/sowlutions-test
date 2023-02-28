@@ -23,10 +23,11 @@ export const getAPI = async (url, headers = null) => {
   }
 };
 
+//get Whats News api
 export const getWhatsNews = async () => {
   const headers = {
     StoreID: 4,
-    Authorization: "f44a4aabfc5992514d262d7f517327e7",
+    Authorization: process.env.REACT_APP_Authorization,
     UserAddressID: 60877,
   };
   const result = await getAPI(`${BASE_URL}/users/products/whats_new`, headers);
