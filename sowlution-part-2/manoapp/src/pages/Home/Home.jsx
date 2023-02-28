@@ -6,6 +6,7 @@ import logo from "../../assets/logo.jpeg";
 import Footer from "../../components/Footer/Footer";
 import { getWhatsNews } from "../../config/axios";
 import { NB_PRODUCTS_IN_PAGE } from "../../constants/constants";
+import Loading from "../../components/Loading/Loading";
 
 function Home() {
   const [products, setProducts] = useState();
@@ -61,7 +62,7 @@ function Home() {
     <>
       <NavBar />
       <div className="flex items-center  flex-wrap ">
-        {products && pagination()}
+        {products ? pagination() : <Loading />}
         <div className="m-5 flex justify-around items-center w-screen ">
           <p
             onClick={() => setPage(page !== 0 ? page - 1 : 0)}
